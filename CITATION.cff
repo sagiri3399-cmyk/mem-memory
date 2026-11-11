@@ -1,0 +1,150 @@
+cff-version: 1.2.0
+message: "If you use Mem-Forever, please cite it as below."
+title: "Mem-Forever: a Git-native persistent memory layer for AI agents"
+abstract: >-
+  Every AI tool forgets a user when the session closes. Mem-Forever keeps the
+  memory in the user's own Git repository as small Markdown files with OKF
+  frontmatter and iLang declarations that a person can read and a machine can
+  parse, so preferences, decisions and lessons survive across sessions, tools
+  and models. Version 2.0 turns the repository into a portable agent brain: a
+  bootloader any tool reads first, a hand-off note that says what was done and
+  what comes next, one file per memory, and an age-encrypted vault for keys,
+  with a single-file Python tool to check, migrate and install. It needs no
+  server and no account: create the repository from the template and point the
+  agent at it. Version 2.1 makes the README the engineering book: copy it into
+  any agent and it can carry it out; the hand-off review accepts a partial
+  write-back. Documentation in nine languages.
+  Version 3.0 starts from the keys: memory is a derivation, the keys derive
+  the tasks, the tasks yield constants, the logic between them is annotation.
+  A ledger of every door replaces the vault, plain in the private repository
+  and sealed only when pairing with the owner always a recipient; a key reaches
+  a model only when the work reaches its door; the owner is recognized by
+  trajectory, not by password; every block carries its source; one review gate
+  stands before every writer and the same rules apply when the brain is read.
+  Version 3.1 gives a key value three states: plain only inside a process,
+  encoded at rest in the private repository with the repository's own pepper
+  (reversible, not encryption), sealed only when pairing; a door opens on a
+  machine only after the owner's grant, recorded in that machine's git config
+  and never in the repository; the secret scan harvests key-shaped text into
+  ledger rows instead of refusing commits; evidence carries its own backing.
+type: software
+authors:
+  - given-names: "Long Quan"
+    family-names: "Zhu"
+    orcid: "https://orcid.org/0009-0004-4540-8082"
+    affiliation: "iLang Inc."
+repository-code: "https://github.com/ilang-ai/Mem-Forever"
+url: "https://github.com/ilang-ai/Mem-Forever"
+license: MIT
+version: "3.2.0"
+date-released: "2026-11-08"
+keywords:
+  - AI memory
+  - persistent memory
+  - iLang
+  - agent skills
+  - Git-native
+  - cross-tool
+  - hand-off
+  - OKF
+  - age encryption
+references:
+  - type: software
+    title: "iLang Protocol Specification, release 5.0.9 (MODULE::MEMORY, WHERE and SECRETS amended for Mem-Forever 3.0)"
+    authors:
+      - family-names: "Zhu"
+        given-names: "Long Quan"
+    year: 2026
+    doi: "10.5281/zenodo.24048531"
+  - type: software
+    title: "iLang Protocol Specification, release 5.0.5 (MODULE::MEMORY names Mem-Forever as the reference template)"
+    authors:
+      - family-names: "Zhu"
+        given-names: "Long Quan"
+    year: 2026
+    doi: "10.5281/zenodo.23990334"
+  - type: software
+    title: "iLang Protocol Specification (concept record)"
+    authors:
+      - family-names: "Zhu"
+        given-names: "Long Quan"
+    year: 2026
+    doi: "10.5281/zenodo.21821452"
+  - type: article
+    title: "Time, clocks, and the ordering of events in a distributed system"
+    authors:
+      - family-names: "Lamport"
+        given-names: "Leslie"
+    year: 1978
+    journal: "Communications of the ACM"
+    doi: "10.1145/359545.359563"
+  - type: article
+    title: "Three approaches to the quantitative definition of information"
+    authors:
+      - family-names: "Kolmogorov"
+        given-names: "Andrey N."
+    year: 1968
+    journal: "International Journal of Computer Mathematics"
+    doi: "10.1080/00207166808803030"
+  - type: article
+    title: "A formal theory of inductive inference, Part I"
+    authors:
+      - family-names: "Solomonoff"
+        given-names: "Ray J."
+    year: 1964
+    journal: "Information and Control"
+    doi: "10.1016/S0019-9958(64)90223-2"
+  - type: article
+    title: "On the length of programs for computing finite binary sequences"
+    authors:
+      - family-names: "Chaitin"
+        given-names: "Gregory J."
+    year: 1966
+    journal: "Journal of the ACM"
+    doi: "10.1145/321356.321363"
+  - type: book
+    title: "An Introduction to Kolmogorov Complexity and Its Applications"
+    authors:
+      - family-names: "Li"
+        given-names: "Ming"
+      - family-names: "Vitányi"
+        given-names: "Paul"
+    year: 2008
+    publisher:
+      name: "Springer"
+    doi: "10.1007/978-0-387-49820-1"
+  - type: article
+    title: "A mathematical theory of communication"
+    authors:
+      - family-names: "Shannon"
+        given-names: "Claude E."
+    year: 1948
+    journal: "Bell System Technical Journal"
+    doi: "10.1002/j.1538-7305.1948.tb01338.x"
+  - type: conference-paper
+    title: "Why cryptosystems fail"
+    authors:
+      - family-names: "Anderson"
+        given-names: "Ross"
+    year: 1993
+    conference:
+      name: "1st ACM Conference on Computer and Communications Security"
+    doi: "10.1145/168588.168615"
+  - type: article
+    title: "The protection of information in computer systems"
+    authors:
+      - family-names: "Saltzer"
+        given-names: "Jerome H."
+      - family-names: "Schroeder"
+        given-names: "Michael D."
+    year: 1975
+    journal: "Proceedings of the IEEE"
+    doi: "10.1109/PROC.1975.9939"
+  - type: article
+    title: "Fuzzy sets"
+    authors:
+      - family-names: "Zadeh"
+        given-names: "Lotfi A."
+    year: 1965
+    journal: "Information and Control"
+    doi: "10.1016/S0019-9958(65)90241-X"
